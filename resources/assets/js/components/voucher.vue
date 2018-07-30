@@ -26,7 +26,7 @@
                     <i class="fa fa-cog"></i></button>
             </div>
         </div>
-        <generate-voucher></generate-voucher>
+        <generate-voucher @reload="getData"></generate-voucher>
         <assign-user :voucher="voucher" @reload="getData"></assign-user>
 
         <table id="example2" class="table table-striped table-bordered table-condensed">

@@ -99,7 +99,8 @@ export default {
             };
             axios.post('/voucher/add', input).then(function (response) {
                 toastr.success('Voucher added'
-	                      , 'Success!', {timeOut: 5000});
+                          , 'Success!', {timeOut: 5000});
+                vue.$emit('reload');
             }).catch(error => {
                 if(error.response.status == '401'){
                     toastr.error(error.response.data, 'Error!', {timeOut: 5000});

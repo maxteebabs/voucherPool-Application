@@ -47985,7 +47985,7 @@ var render = function() {
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
-      _c("generate-voucher"),
+      _c("generate-voucher", { on: { reload: _vm.getData } }),
       _vm._v(" "),
       _c("assign-user", {
         attrs: { voucher: _vm.voucher },
@@ -48278,6 +48278,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             };
             axios.post('/voucher/add', input).then(function (response) {
                 toastr.success('Voucher added', 'Success!', { timeOut: 5000 });
+                vue.$emit('reload');
             }).catch(function (error) {
                 if (error.response.status == '401') {
                     toastr.error(error.response.data, 'Error!', { timeOut: 5000 });
