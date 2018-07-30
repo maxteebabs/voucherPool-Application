@@ -16,6 +16,11 @@ This is a pool to automatically generate voucher codes and assign to an email
  # TO TEST THE APIS. PLEASE GO TO THE LINK BELOW TO SEE THE DOCUMENTATION
  https://documenter.getpostman.com/view/2640876/RWMLKmUk
  Please make sure the application is running on port 4040 or any other port. then the api url should be like localhost:4040/api
+ If you are using the demo link found below, please replace the api url from 
+ localhost:4040/api/   to    http://voucher.cointradeindex.com/api/
+ 
+ # DEMO LINK
+ http://voucher.cointradeindex.com/
  
  # THANK YOU VERY MUCH
  @FAMUREWA TAIWO
