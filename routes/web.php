@@ -23,3 +23,4 @@ Route::group(['prefix' => 'voucher'], function() {
 });
 Route::get('/special/offers/list', 'HomeController@retrieveSpecialOffers');
 Route::post('/users/list', 'HomeController@retrieveUsers');
+Route::get('/users/list', 'HomeController@retrieveUsers');

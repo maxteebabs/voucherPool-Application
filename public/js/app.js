@@ -47922,7 +47922,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         getUsers: function getUsers() {
             var vue = this;
-            axios.post('/users/li').then(function (response) {
+            axios.post('/users/list').then(function (response) {
                 vue.users = response.data.users;
             });
         },
