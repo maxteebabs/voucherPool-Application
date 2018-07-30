@@ -83,7 +83,7 @@
         methods: {
             getUsers: function() {
                 var vue = this;
-                axios.get('/users/list').then(function (response) {
+                axios.post('/users/list').then(function (response) {
                     vue.users = response.data.users;
                 });
             },

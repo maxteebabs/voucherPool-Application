@@ -47922,7 +47922,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         getUsers: function getUsers() {
             var vue = this;
-            axios.get('/users/list').then(function (response) {
+            axios.post('/users/list').then(function (response) {
                 vue.users = response.data.users;
             });
         },
@@ -48658,7 +48658,7 @@ var render = function() {
           _c("div", { staticClass: "modal-body" }, [
             _c("form", [
               _c("div", { staticClass: "form-group" }, [
-                _c("label", [_vm._v("Special Offer")]),
+                _c("label", [_vm._v("Filter")]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -48670,7 +48670,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text" },
+                  attrs: { type: "text", placeholder: "Search by Email" },
                   domProps: { value: _vm.search_term },
                   on: {
                     keyup: _vm.getUsers,
